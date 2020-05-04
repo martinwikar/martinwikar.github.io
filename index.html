@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+	<title>Martin Wikar</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="stylesheet.css" />
+	<body>
+		<!-- Navbar (sit on top) -->
+		<div class="w3-top">
+			<div class="w3-bar" id="myNavbar">
+				<a
+					class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
+					href="javascript:void(0);"
+					onclick="toggleFunction()"
+					title="Toggle Navigation Menu"
+				>
+					<i class="fa fa-bars"></i>
+				</a>
+				<a href="#home" class="w3-bar-item w3-button">HEM</a>
+				<a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> OM MIG</a>
+				<a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+				<a href="#projekt" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PROJEKT</a>
+				<a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> KONTAKT</a>
+			</div>
+
+			<!-- Navbar on small screens -->
+			<div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+				<a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">OM MIG</a>
+				<a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+				<a href="#projekt" class="w3-bar-item w3-button" onclick="toggleFunction()">PROJEKT</a>
+				<a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">KONTAKT</a>
+			</div>
+		</div>
+
+		<!-- First Parallax Image with Logo Text -->
+		<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+			<div class="w3-display-middle" style="white-space: nowrap;">
+				<img class="logo" src="./content/logo/logomw-01.png" alt="website logo" />
+			</div>
+		</div>
+
+		<!-- Container (About Section) -->
+		<div class="w3-content w3-container w3-padding-64" id="about">
+			<h3 class="w3-center">OM MIG</h3>
+			<div class="w3-row">
+				<div class="w3-col m6 w3-center w3-padding-large">
+					<p>
+						<b><i class="fa fa-user w3-margin-right"></i>Martin Wikar</b>
+					</p>
+					<br />
+					<img
+						src="./content/photos/jag.jpg"
+						class="w3-round w3-image"
+						alt="Photo of Me"
+						width="500"
+						height="333"
+					/>
+				</div>
+
+				<!-- Hide this text on small devices -->
+				<div class="w3-col m6 w3-padding-large">
+					<p>
+						<br /><br /><br />
+						Hej hej! Jag heter Martin och jag kommer från Kronoby, en liten by i Österbotten, Finland. Där har jag växt
+						upp och gått i grundskolan och gymnasiet. Efter gymnasiet spenderade jag sex månader i finska militären som
+						fältkock och sedan tog jag mitt pick och pack och drog över Bottniska viken till Umeå. Här började jag
+						studera civilingejörsprogrammet interaktion & design vid Umeå universitet, vilket innebär mycket
+						programmering och en del design. Själv är jag mest intresserad av grafisk design och UX. Intresset för
+						grafisk design har gjort att jag fått kunskap inom många datorprogram; Illustrator, Lightroom, After
+						Effects, Photoshop, Premiere Pro och Blender är de jag kan komma att tänka på just nu. Jag har även
+						programmerat en del i språken Java, C, C#, Python och Javascript. <br /><br />
+						På den här portfolio hemsidan kommer jag ladda upp lite allt möjligt; bilder jag fotat, digital design, 3d
+						renderingar, videor, och projekt jag deltagit i. <br />
+						<h2>Enjoy!</h2>
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Second Parallax Image with Portfolio Text -->
+		<div class="bgimg-2 w3-display-container w3-opacity-min">
+			<div class="w3-display-middle">
+				<span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">PORTFOLIO</span>
+			</div>
+		</div>
+
+		<!-- Container (Portfolio Section) -->
+		<div class="w3-content w3-container w3-padding-64" id="portfolio">
+			<h3 class="w3-center">GOTT & BLANDAT</h3>
+			<p class="w3-center">
+				<em
+					>3D renderingar, foton och digitala konstverk för tillfället.</em
+				>
+			</p>
+			<br />
+
+			<!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+			<div class="container">
+				<div class="gallery">
+					<div class="gallery__item gallery__item--1">
+						<img
+							src="./content/blender/coolgubbe.png"
+							style="width: 100%;"
+							onclick="onClick(this)"
+							class="w3-hover-opacity gallery__img"
+							alt="Blender: Stål"
+						/>
+					</div>
+
+					<div class="gallery__item gallery__item--2">
+						<img
+							src="./content/photos/fredde2.jpg"
+							style="width: 100%;"
+							onclick="onClick(this)"
+							class="w3-hover-opacity gallery__img"
+							alt="Foto: Gräs och öl"
+						/>
+					</div>
+
+					<div class="gallery__item gallery__item--3">
+						<img
+							src="./content/blender/vapor.png"
+							style="width: 100%;"
+							onclick="onClick(this)"
+							class="w3-hover-opacity gallery__img"
+							alt="Blender: Vaporwave"
+						/>
+					</div>
+
+					<div class="gallery__item gallery__item--4">
+						<img
+							src="./content/artwork/DRIP.jpg"
+							style="width: 100%;"
+							onclick="onClick(this)"
+							class="w3-hover-opacity gallery__img"
+							alt="Illustrator: Drip"
+						/>
+					</div>
+
+					<div class="gallery__item gallery__item--5">
+						<img
+							src="./content/artwork/mandrawing.jpg"
+							style="width: 100%;"
+							onclick="onClick(this)"
+							class="w3-hover-opacity gallery__img"
+							alt="Illustrator: Baseball"
+						/>
+					</div>
+
+					<div class="gallery__item gallery__item--6">
+						<img
+							src="./content/photos/hand.jpg"
+							style="width: 100%;"
+							onclick="onClick(this)"
+							class="w3-hover-opacity gallery__img"
+							alt="Foto: Hand"
+						/>
+					</div>
+
+					<div class="gallery__item gallery__item--7">
+						<img
+							src="./content/blender/tunnelmindre.png"
+							style="width: 100%;"
+							onclick="onClick(this)"
+							class="w3-hover-opacity gallery__img"
+							alt="Blender: Run"
+						/>
+					</div>
+
+					<div class="gallery__item gallery__item--8">
+						<img
+							src="./content/photos/svartvit.jpg"
+							style="width: 100%;"
+							onclick="onClick(this)"
+							class="w3-hover-opacity gallery__img"
+							alt="Foto: Syster"
+						/>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- fourth Parallax Image with project showcase -->
+		<div class="projektsida w3-display-container w3-opacity-min">
+			<div class="w3-display-middle">
+				<span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">PROJEKT</span>
+			</div>
+		</div>
+
+		<div class="w3-content w3-container w3-padding-64" id="projekt">
+			<div>
+				<h3 class="w3-center">DSHELF</h3>
+				<div class="w3-row">
+					<div class="w3-padding-large w3-center">
+						<p>
+							Under våren 2020 gick jag projektkursen Design-Build-Test och fick jobba med företaget Curbstone tillsammans
+							med min projektgrupp. I projektet tog jag fram logotyperna i Adobe Illustrator baserat på skisser som vi
+							gjort i gruppen och produktvideon tillsammans med en projektmedlem. Videon är delvist filmad i stopmotion,
+							vilket ingen av oss gjort förut, men visade sig vara kul, jobbigt och lärorikt. Logotyperna gick igenom
+							många iterationer tills vi i gruppen bestämde oss för de tre nuvarande.
+						</p>
+					</div>
+					<div class="w3-row">
+						<div class="w3-col m6 w3-center w3-padding-large">
+							<img
+								src="./content/DSHELF/forsta_utkast.png"
+								class="w3-round w3-image w3-hover-opacity"
+								alt="DSHELF Loggor"
+								onclick="onClick(this)"
+								width="500"
+								height="333"
+							/>
+						</div>
+						<div class="w3-col m6 w3-center w3-padding-large">
+							<iframe 
+							src="https://www.youtube.com/embed/J0XbzP5MNdo"
+							alt="DSHELF produktvideo"
+							height="250" width="400"
+							></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<h3 class="w3-center">ALUMN PROJEKT</h3>
+				<div class="w3-row">
+					<div class="w3-padding-large w3-center">
+						<p>
+							2019 gick jag en kurs på designhögskolan i Umeå där vi skulle ta fram en mockup till en alumn hemsida för
+							Umeå universitet. Vi gick igenom många stadier för att komma till den slutgiltiga designen. Vi började med
+							att intervjua alumner för att se vad de tycker att är viktigt att få fram på en alumnhemsida. sedan gick vi
+							vidare till handritade skisser, wireframes och efter många iterationer in slutgiltig mockup. Bilden till
+							vänster visar en tidig wireframe och till höger en av sidorna på den slutgiltiga designen.
+						</p>
+					</div>
+					<div class="w3-row">
+						<div class="w3-col m6 w3-center w3-padding-large">
+							<img
+								src="./content/alumn/alumnframe-02.png"
+								class="w3-round w3-image w3-hover-opacity"
+								alt="Alumn wireframe"
+								onclick="onClick(this)"
+								width="500"
+								height="333"
+							/>
+						</div>
+						<div class="w3-col m6 w3-center w3-padding-large">
+							<img
+								src="./content/alumn/Startsidainloggad.png"
+								class="w3-round w3-image w3-hover-opacity"
+								alt="Alumn mockup"
+								onclick="onClick(this)"
+								width="500"
+								height="333"
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<h3 class="w3-center">WEBSIDA</h3>
+				<div class="w3-row">
+					<div class="w3-padding-large w3-center">
+						<p>
+							Vårterminen 2020 gick jag en kurs i webteknik där vi fick i uppgift att uppdatera en gammal hemsida. Jag
+							valde Spikbacka Måleris hemsida, den gamla kan ses i den vänstra bilden, och gjorde tre stycken revisioner
+							av hemsidan, alla i samma stuk. Den första versionen var i ren html och css. Den andra i html, css och
+							javascript, där även Grid användes för att placera ut element. Den tredje versionen gjordes i Wordpress. Den
+							som gjordes med hjälp av Grid och javascript är den som kan ses i den högra bilden och även den som jag blev
+							mest nöjd med.
+						</p>
+					</div>
+					<div class="w3-row">
+						<div class="w3-col m6 w3-center w3-padding-large">
+							<img
+								src="./content/spikbacka/gammal.png"
+								class="w3-round w3-image w3-hover-opacity"
+								alt="Gammal hemsida"
+								onclick="onClick(this)"
+								width="500"
+								height="333"
+							/>
+						</div>
+						<div class="w3-col m6 w3-center w3-padding-large">
+							<img
+								src="./content/spikbacka/Screenshot_1.png"
+								class="w3-round w3-image w3-hover-opacity"
+								alt="Uppdaterad hemsida"
+								onclick="onClick(this)"
+								width="500"
+								height="333"
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal for full size images on click-->
+		<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+			<span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"
+				><i class="fa fa-remove"></i
+			></span>
+			<div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+				<img id="img01" class="w3-image" />
+				<p id="caption" class="w3-opacity w3-large"></p>
+			</div>
+		</div>
+
+		<!-- fourth Parallax Image with contact Text -->
+		<div class="bgimg-3 w3-display-container w3-opacity-min">
+			<div class="w3-display-middle">
+				<span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">KONTAKT</span>
+			</div>
+		</div>
+
+		<!-- Container (Contact Section) -->
+		<div class="w3-content w3-container w3-padding-64" id="contact">
+			<div class="w3-row w3-padding-32 w3-section">
+				<div class="w3-col m4 w3-container">
+					<img src="./content/map/Untitled-2-01.png" class="w3-image w3-round" style="width: 100%;" />
+				</div>
+				<div class="w3-col m8 w3-panel">
+					<div class="w3-large w3-margin-bottom">
+
+						<p>Hör av dig eller titta in på något av mina sociala medier!</p>
+						<i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Umeå, SE / Kronoby,
+						FI<br />
+
+						<i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>
+						martin.wikar@gmail.com<br />
+
+						
+							<a href="https://www.eyeem.com/wikart"
+								><img src="./content/logo/eyeemsvart-01.png" alt="eyeem logo" class="fa w3-hover-opacity" style="margin: 4% 1% 1% 1%;"
+							/></a><br>
+							<a href="https://www.instagram.com/martinwikar/"><img src="./content/logo/insta.png" alt="instagram logo" class="fa w3-hover-opacity" style="width: 160px;"
+								/></a>
+						
+						
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+			<a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+			
+			<p>Martin Wikar 2020</p>
+		</footer>
+
+		<script>
+			// Modal Image Gallery
+			function onClick(element) {
+				document.getElementById("img01").src = element.src;
+				document.getElementById("modal01").style.display = "block";
+				var captionText = document.getElementById("caption");
+				captionText.innerHTML = element.alt;
+			}
+
+			// Change style of navbar on scroll
+			window.onscroll = function () {
+				myFunction();
+			};
+			function myFunction() {
+				var navbar = document.getElementById("myNavbar");
+				if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+					navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+				} else {
+					navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+				}
+			}
+
+			// Used to toggle the menu on small screens when clicking on the menu button
+			function toggleFunction() {
+				var x = document.getElementById("navDemo");
+				if (x.className.indexOf("w3-show") == -1) {
+					x.className += " w3-show";
+				} else {
+					x.className = x.className.replace(" w3-show", "");
+				}
+			}
+		</script>
+	</body>
+</html>
